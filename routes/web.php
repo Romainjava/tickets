@@ -1,11 +1,20 @@
 <?php
 
+use App\Filament\Pages\UserDashboard;
+use App\Http\Middleware\CheckUserRole;
 use App\Models\User;
 use App\Models\Ticket;
 use Illuminate\Support\Facades\Route;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use App\Http\Controllers\RoadMap\DataController;
 use App\Http\Controllers\Auth\OidcAuthController;
+
+Route::get('/', UserDashboard::class)
+    ->middleware([
+        'web',
+        DispatchServingFilamentEvent::class,
+       'role:client'
+    ])->name('user-dashboard');
 
 // Share ticket
 Route::get('/tickets/share/{ticket:code}', function (Ticket $ticket) {
