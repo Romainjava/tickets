@@ -9,12 +9,12 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use App\Http\Controllers\RoadMap\DataController;
 use App\Http\Controllers\Auth\OidcAuthController;
 
-Route::get('/', UserDashboard::class)
-    ->middleware([
-        'web',
-        DispatchServingFilamentEvent::class,
-       'role:client'
-    ])->name('user-dashboard');
+// Route::get('/', UserDashboard::class)
+//     ->middleware([
+//         'web',
+//         DispatchServingFilamentEvent::class,
+//        'role:client'
+//     ])->name('user-dashboard');
 
 // Share ticket
 Route::get('/tickets/share/{ticket:code}', function (Ticket $ticket) {
