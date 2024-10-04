@@ -16,14 +16,15 @@
 
     @if(config('system.login_form.is_enabled'))
         <div>
-            @if(config("filament-breezy.enable_registration"))
+            
+            {{-- @if(config("filament-breezy.enable_registration"))
                 <p class="mt-2 text-sm text-center">
                     {{ __('filament-breezy::default.or') }}
                     <a class="text-primary-600" href="{{route(config('filament-breezy.route_group_prefix').'register')}}">
                         {{ strtolower(__('filament-breezy::default.registration.heading')) }}
                     </a>
                 </p>
-            @endif
+            @endif --}}
         </div>
 
         {{ $this->form }}

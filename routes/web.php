@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use App\Http\Controllers\RoadMap\DataController;
 use App\Http\Controllers\Auth\OidcAuthController;
+use App\Filament\Pages\AcceptInvitation;
+use App\Filament\Resources\UserInvitationResource;
 
 // Route::get('/', UserDashboard::class)
 //     ->middleware([
@@ -45,3 +47,10 @@ Route::name('oidc.')
         Route::get('redirect', [OidcAuthController::class, 'redirect'])->name('redirect');
         Route::get('callback', [OidcAuthController::class, 'callback'])->name('callback');
     });
+
+// Remplacer les anciennes routes d'invitation par les nouvelles
+Route::get('/user-invitations', [UserInvitationResource::class, 'index'])->name('user-invitations.index');
+Route::get('/user-invitations/create', [UserInvitationResource::class, 'create'])->name('user-invitations.create');
+Route::post('/user-invitations', [UserInvitationResource::class, 'store'])->name('user-invitations.store');
+
+Route::get('/accept-invitation/{token}', AcceptInvitation::class)->name('filament.pages.accept-invitation');

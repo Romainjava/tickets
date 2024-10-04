@@ -2,35 +2,63 @@
 
 ## Introduction
 
-Cette application permet de gérer des tickets pour différents projets. Chaque projet est attaché à un client spécifique.
+Bienvenue dans l'application de gestion de projets. Ce guide vous aidera à comprendre comment utiliser les principales fonctionnalités de l'application.
 
-## Création d'un ticket
+## Accès à l'application
 
-1. Connectez-vous à l'application.
-2. Dans le menu de navigation, cliquez sur "Tickets" sous la section "Management".
-3. Sur la page des tickets, cliquez sur le bouton "Créer un ticket".
-4. Remplissez le formulaire de création de ticket :
+1. Vous recevrez une invitation par e-mail pour rejoindre l'application.
+2. Cliquez sur le lien d'invitation dans l'e-mail.
+3. Vous serez dirigé vers une page où vous pourrez définir votre mot de passe.
+4. Une fois votre mot de passe défini, vous pourrez vous connecter à l'application.
 
-   a. Sélectionnez le projet concerné dans la liste déroulante "Projet".
-   b. Si applicable, choisissez l'épopée (Epic) associée au ticket.
-   c. Donnez un nom au ticket.
-   d. Sélectionnez le propriétaire du ticket (par défaut, c'est vous).
-   e. Si nécessaire, assignez un responsable pour le ticket.
-   f. Choisissez le statut, le type et la priorité du ticket.
-   g. Rédigez le contenu détaillé du ticket dans l'éditeur de texte riche.
-   h. Si possible, estimez le temps nécessaire pour résoudre le ticket.
-   i. Ajoutez des relations avec d'autres tickets si nécessaire.
+## Connexion
 
-5. Cliquez sur "Créer" pour enregistrer le ticket.
+1. Accédez à la page de connexion de l'application.
+2. Entrez votre adresse e-mail et le mot de passe que vous avez défini.
+3. Cliquez sur "Se connecter".
 
-## Gestion des tickets existants
+## Tableau de bord
 
-- Vous pouvez visualiser tous les tickets sur la page principale des tickets.
-- Utilisez les filtres disponibles pour trier les tickets par projet, propriétaire, responsable, statut, type ou priorité.
-- Cliquez sur un ticket pour voir ses détails ou le modifier.
+Après vous être connecté, vous serez dirigé vers votre tableau de bord personnel. Ici, vous pourrez voir un aperçu de vos projets, tâches en cours et notifications.
 
-## Remarques importantes
+## Projets
 
-- Assurez-vous de sélectionner le bon projet lors de la création d'un ticket.
-- Le code du ticket sera généré automatiquement.
-- Vous ne pouvez voir et gérer que les projets auxquels vous avez accès.
+### Accéder à un projet
+1. Cliquez sur "Projets" dans le menu latéral.
+2. Sélectionnez le projet auquel vous souhaitez accéder.
+
+### Créer un ticket
+1. Dans un projet, cliquez sur "Nouveau ticket".
+2. Remplissez les détails du ticket (titre, description, priorité, etc.).
+3. Cliquez sur "Créer" pour soumettre le ticket.
+
+### Mettre à jour un ticket
+1. Ouvrez le ticket que vous souhaitez mettre à jour.
+2. Cliquez sur "Modifier" pour changer les détails du ticket.
+3. Ajoutez des commentaires si nécessaire.
+4. Cliquez sur "Enregistrer" pour sauvegarder les modifications.
+
+## Profil utilisateur
+
+### Modifier votre profil
+1. Cliquez sur votre nom d'utilisateur en haut à droite.
+2. Sélectionnez "Mon profil".
+3. Mettez à jour vos informations personnelles si nécessaire.
+4. Cliquez sur "Enregistrer" pour sauvegarder les modifications.
+
+### Changer votre mot de passe
+1. Dans votre profil, cliquez sur "Changer le mot de passe".
+2. Entrez votre ancien mot de passe, puis votre nouveau mot de passe.
+3. Confirmez le nouveau mot de passe.
+4. Cliquez sur "Changer le mot de passe" pour confirmer.
+
+## Déconnexion
+
+1. Cliquez sur votre nom d'utilisateur en haut à droite.
+2. Sélectionnez "Déconnexion".
+
+## Assistance
+
+Si vous rencontrez des problèmes ou avez des questions, veuillez contacter votre administrateur système ou le support technique.
+
+Remarque : Assurez-vous de vous déconnecter après chaque session, surtout si vous utilisez un ordinateur partagé.
