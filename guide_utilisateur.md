@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Bienvenue dans l'application de gestion de projets. Ce guide vous aidera à comprendre comment utiliser les principales fonctionnalités de l'application.
+Bienvenue dans l'application. Ce guide vous aidera à comprendre comment utiliser les principales fonctionnalités de l'application.
 
 ## Accès à l'application
 
@@ -19,13 +19,10 @@ Bienvenue dans l'application de gestion de projets. Ce guide vous aidera à comp
 
 ## Tableau de bord
 
-Après vous être connecté, vous serez dirigé vers votre tableau de bord personnel. Ici, vous pourrez voir un aperçu de vos projets, tâches en cours et notifications.
+Après vous être connecté, vous serez dirigé vers votre tableau de bord personnel.
 
 ## Projets
 
-### Accéder à un projet
-1. Cliquez sur "Projets" dans le menu latéral.
-2. Sélectionnez le projet auquel vous souhaitez accéder.
 
 ### Créer un ticket
 1. Dans un projet, cliquez sur "Nouveau ticket".
@@ -38,19 +35,6 @@ Après vous être connecté, vous serez dirigé vers votre tableau de bord perso
 3. Ajoutez des commentaires si nécessaire.
 4. Cliquez sur "Enregistrer" pour sauvegarder les modifications.
 
-## Profil utilisateur
-
-### Modifier votre profil
-1. Cliquez sur votre nom d'utilisateur en haut à droite.
-2. Sélectionnez "Mon profil".
-3. Mettez à jour vos informations personnelles si nécessaire.
-4. Cliquez sur "Enregistrer" pour sauvegarder les modifications.
-
-### Changer votre mot de passe
-1. Dans votre profil, cliquez sur "Changer le mot de passe".
-2. Entrez votre ancien mot de passe, puis votre nouveau mot de passe.
-3. Confirmez le nouveau mot de passe.
-4. Cliquez sur "Changer le mot de passe" pour confirmer.
 
 ## Déconnexion
 
