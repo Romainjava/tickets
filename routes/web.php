@@ -48,9 +48,4 @@ Route::name('oidc.')
         Route::get('callback', [OidcAuthController::class, 'callback'])->name('callback');
     });
 
-// Remplacer les anciennes routes d'invitation par les nouvelles
-Route::get('/user-invitations', [UserInvitationResource::class, 'index'])->name('user-invitations.index');
-Route::get('/user-invitations/create', [UserInvitationResource::class, 'create'])->name('user-invitations.create');
-Route::post('/user-invitations', [UserInvitationResource::class, 'store'])->name('user-invitations.store');
 
-Route::get('/accept-invitation/{token}', AcceptInvitation::class)->name('filament.pages.accept-invitation');

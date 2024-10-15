@@ -4,20 +4,30 @@ namespace App\Filament\Pages;
 
 use App\Models\User;
 use Filament\Forms;
+use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Pages\Page;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
 
 class AcceptInvitation extends Page
 {
-    protected static ?string $slug = 'accept-invitation/{token}';
+    use InteractsWithForms;
+    
+    protected static ?string $slug = 'accept-invitation/{token?}';
 
     protected static string $view = 'filament.pages.accept-invitation';
 
     public ?string $token = null;
 
-    public function mount($token)
+    public function mount(?String $token): void
     {
         $this->token = $token;
+    
+        $user = User::where('invitation_token', $this->token)->firstOrFail();
+    
+        if ($user->hasVerifiedEmail()) {
+            $this->redirect(config('filament.home_url', '/'));
+        }
     }
 
     protected function getFormSchema(): array
@@ -36,6 +46,14 @@ class AcceptInvitation extends Page
 
     public function submit()
     {
+
+        if (!$this->token) {
+            // Gérer l'erreur : pas de token fourni
+            $this->addError('token', __('No invitation token provided.'));
+            return;
+        }
+
+        
         $data = $this->form->getState();
 
         $user = User::where('invitation_token', $this->token)
