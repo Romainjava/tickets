@@ -3,8 +3,8 @@ const { test, expect } = require('@playwright/test');
 test.describe('Guide d\'utilisation pour les super administrateurs', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/login');
-    await page.fill('input[name="email"]', 'john.doe@helper.app');
-    await page.fill('input[name="password"]', 'Passw@rd');
+    await page.fill('input[type="email"]', 'john.doe@helper.app');
+    await page.fill('input[type="password"]', 'Passw@rd');
     await page.click('button.filament-button');
   });
 
